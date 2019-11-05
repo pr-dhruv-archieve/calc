@@ -16,9 +16,10 @@ public class CalculatorTest {
 
 	@Test
 	public void addTest2() {
-		int a = Integer.MAX_VALUE;
-		int b = Integer.MAX_VALUE;
-		assertNotEquals(2 * Integer.MAX_VALUE, Calculator.add(a, b));
+		int a = 100;
+		int b = 100;
+		int expectedResult = 1000;
+		assertNotEquals(expectedResult, Calculator.add(a, b));
 	}
 
 	@Test
@@ -31,9 +32,9 @@ public class CalculatorTest {
 
 	@Test
 	public void addTest4() {
-		int a = Integer.MAX_VALUE + 1;
-		int b = Integer.MAX_VALUE + 1;
-		int expectedResult = 2 * Integer.MAX_VALUE + 2;
+		int a = 100 + 1;
+		int b = 100 + 1;
+		int expectedResult = 2 * 100 + 1;
 		assertNotEquals(expectedResult, Calculator.add(a, b));
 	}
 
